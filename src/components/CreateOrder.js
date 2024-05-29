@@ -57,8 +57,6 @@ const CreateOrder = () => {
           delivery_address: '',
           items: [{ name: '', price: '', quantity: '' }],
         });
-      
-        fetchOrders();
       })
       .catch(error => withReactContent(Swal).fire('ATENÇÃO', 'Algo saiu errado ao criar o pedido', 'error'));
   };
