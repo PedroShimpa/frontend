@@ -49,7 +49,7 @@ const CreateOrder = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post('http://127.0.0.1:8000/orders', order)
+    axios.post('http://localhost:8000/orders', order)
       .then(response => {
         withReactContent(Swal).fire('OK', 'Pedido adicionado com sucesso', 'success');
         setOrder({
