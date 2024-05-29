@@ -23,7 +23,7 @@ FROM nginx:alpine
 COPY --from=0 /app/build /usr/share/nginx/html
 
 # Exponha a porta 80 para o contêiner
-EXPOSE 3010
+EXPOSE 3030
 
 # Comando para rodar o servidor Nginx
 CMD ["nginx", "-g", "daemon off;"]

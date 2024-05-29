@@ -11,8 +11,8 @@ RUN npm install
 # Copie o restante dos arquivos do projeto para o diretório de trabalho
 COPY . .
 
-# Exponha a porta 3010 para o contêiner
-EXPOSE 3010
+# Exponha a porta 3030 para o contêiner
+EXPOSE 3030
 
 # Comando para iniciar o servidor de desenvolvimento do React
 CMD ["npm", "start"]
